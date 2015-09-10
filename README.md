@@ -1,6 +1,10 @@
 # PIXTURE
 Android wrapper library for picking and cropping picture, from camera or gallery. It uses [android-cropimage](https://github.com/lvillani/android-cropimage) for cropping under the hood (might change in future releases).
 
+# Requirement
+
+This library requires SDK level 15 (due to restriction on cropping library). We are looking forward to reduce this number to 10 in future releases.
+
 # Usage
 
 Please use type-safe Intent builder. See `demo` module for examples.
