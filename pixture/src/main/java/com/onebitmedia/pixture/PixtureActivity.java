@@ -55,6 +55,12 @@ public class PixtureActivity extends Activity {
                                 }
                             }
                         })
+                        .setOnDismissListener(new DialogInterface.OnDismissListener() {
+                            @Override
+                            public void onDismiss(DialogInterface dialog) {
+                                cancel();
+                            }
+                        })
                         .show();
                 break;
         }
@@ -154,6 +160,10 @@ public class PixtureActivity extends Activity {
             e("Source photo file not found: %s", uri);
             toast("Failed to load photo.");
         }
+    }
+
+    private void cancel() {
+        finish();
     }
 
     private void finishWithResult(@Nullable Uri uri) {
