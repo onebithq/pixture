@@ -1,1 +1,1 @@
-include ':app', ':pixture'
+include ':demo', ':pixture'
